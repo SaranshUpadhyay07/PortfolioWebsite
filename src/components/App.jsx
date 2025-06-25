@@ -5,7 +5,7 @@ import Socials from './socials.jsx'
 import About from './about.jsx'
 import Skills from './skills.jsx'
 import Footer from './footer.jsx'
-import Projects from './Projects.jsx';
+import Projects from './projects.jsx';
 import Journey from './journey.jsx'
 // import Section from './Section.jsx'
 

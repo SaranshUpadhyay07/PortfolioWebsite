@@ -55,7 +55,7 @@ function Header() {
             <div className="modal-body">
               <p className="text-white">Feel free to reach out to me through any of the platforms below:</p>
               <ul className="list-styled">
-                <li><a href="https://www.linkedin.com/in/saransh-upadhyay/" className="text-decoration-none text-light">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/saransh-upadhyay-81702020a/" className="text-decoration-none text-light">LinkedIn</a></li>
                 <li><a href="https://www.instagram.com/saransh_upadhyay07/ " target="_blank" className="text-decoration-none text-white">Instagram</a></li>
                 <li><a href="https://x.com/SaranshUpadhy20" className="text-decoration-none text-white" target="_blank">X</a></li>
                 <li><a href="#" className="text-decoration-none text-white" onClick={(e) => {e.preventDefault(); // Prevent default anchor behavior
