@@ -16,7 +16,7 @@ function Footer() {
         <div className="row">
           <div className="col-12">
             {/* Left copyright */}
-            <div className="left mb-1 ">
+            <div className="left mb-4 ">
               <a className="transition" href="https://www.adhamdannaway.com/">
                 © 2025 Saransh Upadhyay
               </a>
