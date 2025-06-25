@@ -53,7 +53,7 @@
 .social a svg,
 .social a ion-icon {
   vertical-align: middle;
-  color: rgb(36, 36, 36)
+  /* color: rgb(36, 36, 36) */
 }
 .social a svg{
 width: 18px;
@@ -236,4 +236,14 @@ body.modal-open::before {
   height: 100%;
   backdrop-filter: blur(3px);
   z-index: 1040; /* Below Bootstrap modal (z-index: 1050) */
+}
+
+.inst{
+    color:#e1306c !important;
+}
+.link{
+    color:#1da1f2 !important;
+}
+.ggl{
+    color: #db4437 !important;
 }
