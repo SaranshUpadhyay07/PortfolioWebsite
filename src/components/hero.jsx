@@ -11,7 +11,7 @@ function Hero() {
             A self-motivated tech enthusiast with a passion for startups, machine learning, and finance-tech, especially high-frequency trading.
           </p>
           <button className="btn btn-primary btn-lg mt-3 Resume">
-            <ion-icon name="download-outline"></ion-icon> Resume
+            <a href="./pdf/SaranshUpadhyay_resume.pdf" target="_blank"><ion-icon name="download-outline"></ion-icon> Resume</a>
           </button>
         </div>
 

@@ -247,3 +247,7 @@ body.modal-open::before {
 .ggl{
     color: #db4437 !important;
 }
+.Resume a{
+    color:white;
+    text-decoration: none;
+}
