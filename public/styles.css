@@ -335,6 +335,9 @@ body.modal-open::before {
 }
 
 @media (max-width: 480px) {
+    .Resume {
+    margin-right:30%;
+  }
   .text-main h1 {
     font-size: 1.6rem;
   }
