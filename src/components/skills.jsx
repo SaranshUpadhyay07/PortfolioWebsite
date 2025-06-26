@@ -1,7 +1,7 @@
 import React from 'react';
 
 const skills = {
-  Languages: ['JavaScript', 'TypeScript', 'Python', 'Go', 'SQL', 'Java'],
+  Languages: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'Java'],
   Frontend: ['React', 'Bootstrap', 'Tailwind CSS'],
   Backend: ['Express.js'],
   Databases: ['MongoDB', 'PostgreSQL', 'MySQL']
