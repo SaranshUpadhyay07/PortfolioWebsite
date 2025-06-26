@@ -242,7 +242,7 @@ body.modal-open::before {
     text-decoration: none;
 }
 .navbar-div {
-  background-color: rgba(0, 0, 0, 0.4) !important; /* semi-transparent */
+  background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
   backdrop-filter: blur(10px) !important;         /* main blur effect */
   -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;

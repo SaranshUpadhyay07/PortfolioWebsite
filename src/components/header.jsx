@@ -20,7 +20,6 @@ function Header() {
   return (
     <div className="">
       <nav className="navbar navbar-div navbar-expand-lg fixed-top">
-        <div className="container-fluid navbar-div">
           <button
             className="navbar-toggler bg-light"
             type="button"
@@ -41,7 +40,6 @@ function Header() {
             </div>
           </div>
           <button className="contact-me btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact Me</button>
-        </div>
       </nav>
 
       {/* Modal */}
