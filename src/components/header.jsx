@@ -18,9 +18,9 @@ function Header() {
   }, []);
 
   return (
-    <div className="bg-black">
-      <nav className="navbar navbar-expand-lg navbar-black bg-black fixed-top">
-        <div className="container-fluid">
+    <div className="">
+      <nav className="navbar navbar-div navbar-expand-lg fixed-top">
+        <div className="container-fluid navbar-div">
           <button
             className="navbar-toggler bg-light"
             type="button"

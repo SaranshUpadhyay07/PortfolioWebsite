@@ -10,9 +10,9 @@
 .container-fluid a{
     color: white !important;
 }
-.navbar{
+/* .navbar{
     background-color: #000000 !important;
-}
+} */
 /* === Socials Component Styles === */
 
 .fixed-bottom {
@@ -237,11 +237,13 @@ body.modal-open::before {
   backdrop-filter: blur(3px);
   z-index: 1040; /* Below Bootstrap modal (z-index: 1050) */
 }
-
-.inst{
-    color:#e1306c !important;
-}
 .Resume a{
     color:white;
     text-decoration: none;
+}
+.navbar-div {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* semi-transparent */
+  backdrop-filter: blur(10px) !important;         /* main blur effect */
+  -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
