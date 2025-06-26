@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <div className="">
-      <nav className="navbar navbar-div navbar-expand-lg fixed-top">
+      <nav className="navbar px-4 navbar-div navbar-expand-lg fixed-top">
           <button
             className="navbar-toggler bg-light"
             type="button"
