@@ -259,3 +259,93 @@ body.modal-open::before {
      -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
      border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
+/* === Mobile-first Media Queries (Enhance Mobile Layout) === */
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1.5rem !important;
+  }
+
+  .text-main {
+    text-align: center !important;
+    padding: 0 1rem;
+  }
+
+  #img-main {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  #img-main img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* ensures image is round */
+  }
+
+  .Resume {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .custom-jumbotron {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .diff-section {
+    padding: 1rem;
+  }
+
+  .additional {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .skills-list {
+    padding: 0 1rem;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+
+  #About-section h1,
+  #About-section p {
+    text-align: center;
+  }
+
+  .social {
+    margin-bottom: 60px; /* push it above bottom nav on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-main h1 {
+    font-size: 1.8rem;
+  }
+
+  .Resume {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .social a {
+    font-size: 1.2rem;
+  }
+
+  #img-main img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills-list {
+    font-size: 14px;
+  }
+}
