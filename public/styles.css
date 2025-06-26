@@ -1,68 +1,64 @@
-/* === Global Reset === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.container-fluid{
+    background-color: #000000 !important;
+    padding: 5px;
+}
+.container-fluid a{
+    color: white !important;
+}
+/* .navbar{
+    background-color: #000000 !important;
+} */
+/* === Socials Component Styles === */
 
-/* === Containers === */
-.container-fluid {
-  background-color: #000000 !important;
-  padding: 5px;
+.fixed-bottom {
+  bottom: 20px; /* add some spacing from bottom */
 }
 
-.container-fluid a {
-  color: white !important;
+.social {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.container {
-  color: grey !important;
+.social:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
 }
 
-/* === Navbar === */
-.navbar-div {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-/* === Hero Section === */
-.hero-section {
-  gap: 20%;
-}
-
-/* === Resume Button === */
-.Resume {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  margin-bottom: 20px;
-}
-
-.Resume a {
-  color: white;
+.social a {
+  font-size: 1.4rem;
+  color: #f5d6d6;
+  transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
 }
 
-/* === Contact === */
-.contact-me {
-  padding: 9px;
+.social a:hover {
+  transform: scale(1.2);
+}
+.social {
+  border: 0.5px solid white;
   border-radius: 10px;
+  margin-bottom: 10px;
+  background: transparent; /* this makes the background see-through */
+  backdrop-filter: blur(10px); /* optional: adds a frosted glass blur behind it */
 }
-
-/* === About Section === */
-#About-section p {
-  padding-top: 25px;
+.social a svg,
+.social a ion-icon {
+  vertical-align: middle;
+  color: rgb(36, 36, 36)
 }
+.social a svg{
+width: 18px;
+  height: 18px;}
 
-#About-section h1,
-#About-section p {
-  text-align: center;
-}
-
-/* === Animations === */
 .text-main {
   animation: fadeInRight 1s ease-in-out;
 }
@@ -92,110 +88,57 @@
     transform: translateX(0);
   }
 }
-
-/* === Socials === */
-.fixed-bottom {
-  bottom: 20px;
+#About-section p{
+  padding-top:25px;
 }
-
-.social {
-  background: transparent;
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  margin-bottom: 10px;
-  border: 0.5px solid white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-}
-
-.social a {
-  font-size: 1.4rem;
-  color: #f5d6d6;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social a:hover {
-  transform: scale(1.2);
-}
-
-.social a svg,
-.social a ion-icon {
-  vertical-align: middle;
-  color: rgb(36, 36, 36);
-}
-
-.social a svg {
-  width: 18px;
-  height: 18px;
-}
-
-/* === Custom Jumbotron === */
 .custom-jumbotron {
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 12px;
-  padding: 2rem;
+    width: 90%;
+    margin: 0 auto; /* centers the jumbotron */
+    border-radius: 12px;
+    padding: 2rem;
 }
-
 .additional {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);  /* Soft white border for dark UI */
+  border-radius: 16px;  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Soft shadow */
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   padding: 1rem;
-  margin-top: 10px;
+  margin-top:10px
 }
 
 .additional:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);  /* Deeper shadow on hover */
 }
 
-/* === Diff Section === */
-.diff-section {
-  background-color: #f5f5f5;
-  width: 100%;
-  padding: 1rem;
-  padding-bottom: 2.5rem;
-  padding-top: 2rem;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.diff-section{
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.diff-section h1 {
+    color:#606060;
 }
 
-.diff-section * {
-  font-size: 0.95rem;
+.container{
+    color:grey !important;
 }
 
-.diff-section h1,
-.diff-section h2,
-.diff-section h3 {
-  font-size: 2rem;
-  color: #000;
+.skills-list{
+    padding:10%;
 }
 
-/* === Skills List === */
-.skills-list {
-  padding: 10%;
+.hero-section{
+    gap:20%;
 }
-
-/* === View Project Card === */
-.view-project {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-/* === Footer === */
 footer {
   background-color: #f5f5f5;
-  padding-top: 44px;
-  padding-bottom: 0;
+  padding-top: 44px; /* more bottom padding for "Back to top" */
+  padding-bottom:0px;
   margin-top: 50px;
   color: #555;
   font-size: 15px;
@@ -233,6 +176,7 @@ footer .gradient-white {
   background: linear-gradient(to top, #f5f5f5, transparent);
 }
 
+/* Optional: Make nav links inline and styled */
 #nav-footer ul {
   list-style: none;
   padding: 0;
@@ -247,13 +191,50 @@ footer .gradient-white {
   font-weight: 500;
   text-transform: capitalize;
 }
+.Resume{
+     background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
+     backdrop-filter: blur(10px) !important;         /* main blur effect */
+     -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+     border: 1px solid rgba(255, 255, 255, 0.1) !important;
+     margin-bottom:20px;
+    
+}
 
-/* === Blurred Modal Effect === */
+
+.contact-me{
+    padding:9px;
+    border-radius:10px;
+    
+}
+
+@media (max-width: 768px) {
+  .Resume{
+    margin-left:40%;
+  }
+    
+}
+@media (max-width: 400px) {
+  .Resume{
+    margin-left:30%;
+  }
+  #text-main {
+    font-size: 1. rem !important;
+  }
+    
+}
+@media (max-width: 600px) {
+  .Resume{
+    margin-left:35%;
+  }
+    
+}
+
 .blurred {
   filter: blur(6px);
   transition: filter 0.3s ease;
 }
 
+/* Optional darken overlay look */
 body.modal-open::before {
   content: "";
   position: fixed;
@@ -262,15 +243,28 @@ body.modal-open::before {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(3px);
-  z-index: 1040;
+  z-index: 1040; /* Below Bootstrap modal (z-index: 1050) */
+}
+.Resume a{
+    color:white;
+    text-decoration: none;
+}
+.navbar-div {
+  background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
+  backdrop-filter: blur(10px) !important;         /* main blur effect */
+  -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* === Responsive Media Queries === */
-@media (max-width: 768px) {
-  .Resume {
-    margin-left: 40%;
-  }
+.view-project{
+     background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
+     backdrop-filter: blur(10px) !important;         /* main blur effect */
+     -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+     border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+/* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
+@media (max-width: 768px) {
   .hero-section {
     flex-direction: column-reverse !important;
     align-items: center !important;
@@ -280,7 +274,7 @@ body.modal-open::before {
 
   .text-main {
     text-align: center !important;
-    padding: 0 1.2rem;
+    padding: 0 1rem;
   }
 
   #img-main {
@@ -292,7 +286,7 @@ body.modal-open::before {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; /* ensures image is round */
   }
 
   .Resume {
@@ -303,16 +297,18 @@ body.modal-open::before {
     font-size: 0.9rem;
   }
 
-  .custom-jumbotron,
-  .additional {
+  .custom-jumbotron {
     width: 95%;
     padding: 1rem;
-    margin: 1rem auto;
   }
 
   .diff-section {
-    width: 100%;
-    padding: 1rem 1.2rem;
+    padding: 1rem;
+  }
+
+  .additional {
+    margin: 1rem 0;
+    padding: 1rem;
   }
 
   .skills-list {
@@ -323,29 +319,33 @@ body.modal-open::before {
     font-size: 13px;
   }
 
-  .social {
-    margin-bottom: 60px;
+  #About-section h1,
+  #About-section p {
+    text-align: center;
   }
-}
 
-@media (max-width: 600px) {
-  .Resume {
-    margin-left: 35%;
+  .social {
+    margin-bottom: 60px; /* push it above bottom nav on mobile */
+  }
+  .different-section{
+    padding: 0.5rem;
+  }
+  .different-section h1{
+    text-align:center;
+  }
+  .additional {
+    margin-left: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-    .Resume {
-    margin-right:30%;
-  }
   .text-main h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .Resume {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
-    margin-left: 30%;
   }
 
   .social a {
@@ -360,8 +360,7 @@ body.modal-open::before {
   .skills-list {
     font-size: 14px;
   }
-
-  .diff-section * {
-    font-size: 0.9rem;
+  .additional {
+    margin-left: 0.5rem;
   }
 }

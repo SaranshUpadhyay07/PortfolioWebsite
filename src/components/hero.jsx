@@ -6,7 +6,7 @@ function Hero() {
       <div className="row align-items-center hero-section">
         {/* Text Section */}
         <div id="text-main" className="col-md-5 text-main">
-          <h1 className="display-4 mb-3">Hey,I am Saransh Upadhyay</h1>
+          <h1 className="display-4 mb-3 text-dark">Hey,I am Saransh Upadhyay</h1>
           <p className="intro fs-5 mb-2">
             A self-motivated tech enthusiast with a passion for startups, machine learning, and finance-tech, especially high-frequency trading.
           </p>
