@@ -261,7 +261,10 @@ body.modal-open::before {
 }
 /* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
+/* === Mobile-first Media Queries (Enhance Mobile Layout) === */
+
 @media (max-width: 768px) {
+  /* Layout adjustments */
   .hero-section {
     flex-direction: column-reverse !important;
     align-items: center !important;
@@ -271,7 +274,7 @@ body.modal-open::before {
 
   .text-main {
     text-align: center !important;
-    padding: 0 1rem;
+    padding: 0 1.2rem;
   }
 
   #img-main {
@@ -283,9 +286,10 @@ body.modal-open::before {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* ensures image is round */
+    border-radius: 50%;
   }
 
+  /* Resume button */
   .Resume {
     display: block;
     margin: 1rem auto;
@@ -294,24 +298,30 @@ body.modal-open::before {
     font-size: 0.9rem;
   }
 
-  .custom-jumbotron {
+  /* Section spacing */
+  .custom-jumbotron,
+  .additional {
     width: 95%;
     padding: 1rem;
+    margin: 1rem auto;
   }
 
   .diff-section {
-    padding: 1rem;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
-  .additional {
-    margin: 1rem 0;
-    padding: 1rem;
+  .diff-section * {
+    font-size: 0.95rem;
   }
 
   .skills-list {
     padding: 0 1rem;
   }
 
+  /* Footer tweaks */
   footer {
     font-size: 13px;
   }
@@ -322,13 +332,13 @@ body.modal-open::before {
   }
 
   .social {
-    margin-bottom: 60px; /* push it above bottom nav on mobile */
+    margin-bottom: 60px;
   }
 }
 
 @media (max-width: 480px) {
   .text-main h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .Resume {
@@ -347,5 +357,9 @@ body.modal-open::before {
 
   .skills-list {
     font-size: 14px;
+  }
+
+  .diff-section * {
+    font-size: 0.9rem;
   }
 }
