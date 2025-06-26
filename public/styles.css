@@ -189,12 +189,14 @@ footer .gradient-white {
   text-transform: capitalize;
 }
 .Resume{
-    background-color: #000000 !important;
-    margin-bottom: 13px;
-    border-color:black !important;
-    padding:12px !important;
+     background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
+     backdrop-filter: blur(10px) !important;         /* main blur effect */
+     -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+     border: 1px solid rgba(255, 255, 255, 0.1) !important;
+     margin-bottom:20px;
     
 }
+
 
 .contact-me{
     padding:9px;
@@ -211,6 +213,9 @@ footer .gradient-white {
 @media (max-width: 400px) {
   .Resume{
     margin-left:30%;
+  }
+  #text-main {
+    font-size: 1. rem !important;
   }
     
 }
@@ -246,4 +251,11 @@ body.modal-open::before {
   backdrop-filter: blur(10px) !important;         /* main blur effect */
   -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.view-project{
+     background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
+     backdrop-filter: blur(10px) !important;         /* main blur effect */
+     -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }

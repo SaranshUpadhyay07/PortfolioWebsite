@@ -19,10 +19,9 @@ function Hero() {
         <div id="img-main" className="col-md-4 text-center">
           <img
             src="https://media.licdn.com/dms/image/v2/D5603AQF5E9HPElXHoQ/profile-displayphoto-scale_400_400/B56ZeoR.U7H8Ag-/0/1750874975264?e=1756339200&v=beta&t=pqHknqahTkWc3wZyZpphs1UfChqfyW9YFxEHspjQ9WE"
-            className="img-fluid rounded shadow-sm"
+            className="img-fluid rounded-circle shadow-sm"
             alt="Portrait of Saransh Upadhyay"
           />
-
         </div>
       </div>
     </div>

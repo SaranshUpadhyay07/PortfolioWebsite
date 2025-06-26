@@ -54,8 +54,8 @@ function Projects() {
                         {categories.map((category) => (
                             <button
                                 key={category}
-                                className={`btn btn-sm me-2 mb-2 ${
-                                    selectedCategory === category ? 'btn-dark' : 'btn-outline-dark'
+                                className={`btn btn-sm me-2 mb-2  ${
+                                    selectedCategory === category ? 'view-project text-light' : 'btn-outline-dark'
                                 }`}
                                 onClick={() => setSelectedCategory(category)}
                             >
@@ -77,7 +77,7 @@ function Projects() {
                                     <div className="card-body d-flex flex-column">
                                         <h5 className="card-title">{project.title}</h5>
                                         <p className="card-text">{project.description}</p>
-                                        <a href={project.link} className="btn text-white bg-black mt-auto">View Project</a>
+                                        <a href={project.link} className="btn text-white view-project mt-auto">View Project</a>
                                     </div>
                                 </div>
                             </div>
