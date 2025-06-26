@@ -270,8 +270,8 @@ body.modal-open::before {
     align-items: center !important;
     text-align: center !important;
     gap: 1.5rem !important;
+    
   }
-
   .text-main {
     text-align: center !important;
     padding: 0 1rem;
@@ -296,7 +296,26 @@ body.modal-open::before {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+  .custom-jumbotron {
+    width: 90%;
+    margin: 0 auto; /* centers the jumbotron */
+    border-radius: 12px;
+    padding: 2rem;
+}
+.additional {
+  border: 0px; /* Soft white border for dark UI */
+  border-radius: 0px;  /* Rounded corners */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);  /* Soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  margin-top:10px
+}
 
+.lead{
+  font-size: 0.9rem !important;
+  text-align: justify !important;
+  margin-bottom: 0;
+}
   .custom-jumbotron {
     width: 95%;
     padding: 1rem;
