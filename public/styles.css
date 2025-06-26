@@ -298,9 +298,9 @@ body.modal-open::before {
   }
   .custom-jumbotron {
     width: 90%;
-    margin: 0 auto; /* centers the jumbotron */
+    margin: 0; /* centers the jumbotron */
     border-radius: 12px;
-    padding: 2rem;
+    padding: 0 !important;
 }
 .additional {
   border: 0px; /* Soft white border for dark UI */
@@ -309,6 +309,10 @@ body.modal-open::before {
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   padding: 1rem;
   margin-top:10px
+}
+.additional:hover {
+  transform: translateY(0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);  /* Deeper shadow on hover */
 }
 
 .lead{
