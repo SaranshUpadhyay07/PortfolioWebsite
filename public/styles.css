@@ -61,11 +61,17 @@ width: 18px;
 
 .text-main {
   animation: fadeInRight 1s ease-in-out;
+  animation-fill-mode: both;
 }
 
 #img-main {
   animation: fadeInLeft 1s ease-in-out;
+  animation-fill-mode: both;
 }
+.text-main, #img-main {
+  will-change: transform, opacity;
+}
+
 
 @keyframes fadeInRight {
   0% {
