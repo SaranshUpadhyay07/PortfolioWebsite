@@ -5,28 +5,28 @@ const projectData = [
         title: 'Project One',
         category: 'Web',
         description: 'A brief description of Project One.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        imageUrl: '',
         link: '#'
     },
     {
         title: 'Project Two',
         category: 'App',
         description: 'A brief description of Project Two.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        imageUrl: '',
         link: '#'
     },
     {
         title: 'Project Three',
         category: 'Web',
         description: 'A brief description of Project Three.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        imageUrl: '',
         link: '#'
     },
     {
         title: 'Project Four',
         category: 'ML',
         description: 'A brief description of Project Four.',
-        imageUrl: 'https://via.placeholder.com/300x200',
+        imageUrl: '',
         link: '#'
     }
 ];
