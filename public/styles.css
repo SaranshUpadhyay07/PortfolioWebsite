@@ -369,9 +369,6 @@ body.modal-open::before {
     text-align: center;
   }
 
-  .social {
-    margin-bottom: 60px; /* push it above bottom nav on mobile */
-  }
   .different-section{
     padding: 0.5rem;
   }
