@@ -318,7 +318,7 @@ body.modal-open::before {
     padding: 0.05rem !important;
 }
   .diff-section h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   .diff-section p {
