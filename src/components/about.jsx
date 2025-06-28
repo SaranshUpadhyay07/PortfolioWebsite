@@ -5,7 +5,7 @@ function About() {
         <div className=" diff-section">
             <div className="custom-jumbotron additional jumbotron-fluid">
                     <div className="container text-dark sections" id="About-section">
-                    <h1 className="display-4">About me</h1>
+                    <h1 className="display-4">Me ... </h1>
                     <div className="paragraph">
                             <section className="intro">
                 <p className="lead">
