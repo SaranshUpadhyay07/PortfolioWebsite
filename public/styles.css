@@ -287,15 +287,22 @@ body.modal-open::before {
 }
 /* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
-@media (min-width: 1500px) {
-  .diff-section {
-    padding: 3rem 15rem;
-  }
+@media (min-width: 1510px) {
   .hero-section {
-    padding: 0 14rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    max-width: 1600px;
+  }
+  .diff-section {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
   .different-section {
-    padding: 2rem 13rem;
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
+  .diff-section div, .different-section div{
+    max-width: 1600px;
   }
 }
 
