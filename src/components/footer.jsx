@@ -17,12 +17,9 @@ function Footer() {
           <div className="col-12">
             {/* Left copyright */}
             <div className="left mb-4 ">
-              <a className="transition" href="https://www.adhamdannaway.com/">
+              <a className="transition" href="https://splendorous-capybara-a57881.netlify.app/#top">
                 © 2025 Saransh Upadhyay
               </a>
-            </div>
-            <div>
-                Have a good day!
             </div>
           </div>
         </div>
