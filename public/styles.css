@@ -349,8 +349,7 @@ body.modal-open::before {
     font-size: 0.9rem;
   }
 }
-
-@media(max-width:950px){
+@media(max-width:1000px){
   .hero-section {
     flex-direction: column-reverse !important;
     align-items: center !important;
@@ -358,6 +357,15 @@ body.modal-open::before {
     gap: 1.5rem !important;
     padding: 0;
   }
+  .diff-section{
+    padding: 0.5rem 0rem;
+  }
+  .different-section{
+    padding: 0.5rem 0rem;
+  }
+}
+
+@media(max-width:950px){
   .diff-section{
     padding: 0.5rem 0rem;
   }
