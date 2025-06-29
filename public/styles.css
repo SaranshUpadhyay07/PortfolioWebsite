@@ -287,6 +287,18 @@ body.modal-open::before {
 }
 /* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
+@media (min-width: 1500px) {
+  .diff-section {
+    padding: 3rem 15rem;
+  }
+  .hero-section {
+    padding: 0 14rem;
+  }
+  .different-section {
+    padding: 2rem 13rem;
+  }
+}
+
 @media (max-width: 1300px) {
   .diff-section{
     padding: 0rem 7rem;
@@ -338,7 +350,7 @@ body.modal-open::before {
   }
 }
 
-@media(max-width:912px){
+@media(max-width:950px){
   .hero-section {
     flex-direction: column-reverse !important;
     align-items: center !important;
