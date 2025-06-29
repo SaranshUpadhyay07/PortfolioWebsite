@@ -68,6 +68,7 @@ width: 18px;
 .text-main {
   animation: fadeInRight 1s ease-in-out;
   animation-fill-mode: both;
+  padding-top:2rem;
 }
 
 #img-main {
@@ -125,9 +126,7 @@ width: 18px;
 .diff-section{
     background-color: #f5f5f5;
     width: 100%;
-    padding: 0.5rem;
-    padding-bottom: 2.5rem;
-    padding-top: 2rem;;
+    padding: 2.5rem 12rem;
     margin-top:30px;
     margin-bottom: 30px;
     /* border-top: 2.5px solid #e2e2e2 !important; */
@@ -144,6 +143,7 @@ width: 18px;
     font-weight: 600 !important;
     font-size:6rem !important;
     font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    margin-bottom: 0;
 }
 #text-main h3, p {
     color:grey !important;
@@ -155,6 +155,7 @@ width: 18px;
 
 .hero-section{
     gap:20%;
+    padding: 0 8.5rem;
 }
 footer {
   background-color: #f5f5f5;
@@ -221,7 +222,7 @@ footer .gradient-white {
     
 }
 .different-section{
-  padding-left:0.1rem
+  padding: 0.5rem 8rem;
 }
 .contact-me{
     padding:9px;
@@ -286,13 +287,80 @@ body.modal-open::before {
 }
 /* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
+@media (max-width: 1300px) {
+  .diff-section{
+    padding: 0rem 7rem;
+  }
+  .hero-section {
+    padding: 0 5rem;
+  }
+  .different-section{
+    padding: 0rem 5.3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 0 4rem;
+  }
+  .diff-section{
+    padding: 0.5rem 4rem;
+  }
+  .different-section{
+    padding: 0.5rem 4.5rem;
+  }
+  .text-main {
+    text-align: center !important;
+    padding: 0 1rem;
+  }
+  #text-main h1 {
+    font-size: 4.5rem !important;
+  }
+
+  #img-main {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  #img-main img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* ensures image is round */
+  }
+
+  .Resume {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width:912px){
+  .hero-section {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1.5rem !important;
+    padding: 0;
+  }
+  .diff-section{
+    padding: 0.5rem 0rem;
+  }
+  .different-section{
+    padding: 0.5rem 0rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column-reverse !important;
     align-items: center !important;
     text-align: center !important;
     gap: 1.5rem !important;
-    
+    padding: 0;
   }
   .text-main {
     text-align: center !important;
