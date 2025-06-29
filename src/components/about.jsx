@@ -6,7 +6,7 @@ function About() {
         <section className="container-lg px-lg-5 py-2  text-dark">
       <div className="px-lg-5">
         <div className="px-lg-5">
-          <h1 className="mb-5 fw-light display-4 text-sm-center text-md-start text-lg-start">Me ...</h1>
+          <h1 className="mb-5 fw-normal display-4 text-sm-center text-md-start text-lg-start">Me ...</h1>
 
           <div className="text-muted">
             <section className="intro mb-4">

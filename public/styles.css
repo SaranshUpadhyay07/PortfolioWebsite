@@ -316,6 +316,17 @@ body.modal-open::before {
 .lead{
   font-size: 0.9rem;
 }
+.portfolio{
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1.5rem !important;
+    padding: 0;
+}
+.portfolio-pic{
+  width:400px;
+  height:400px;
+}
 }
   /* .diff-section h1 {
     font-size: 2rem;

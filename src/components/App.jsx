@@ -5,8 +5,9 @@ import Socials from './socials.jsx'
 import About from './about.jsx'
 import Skills from './skills.jsx'
 import Footer from './footer.jsx'
-import Projects from './projects.jsx';
+import Projects from './projects.jsx'
 import Journey from './journey.jsx'
+import Portfolio from './portfolio.jsx'
 // import Section from './Section.jsx'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Socials />
       <About />
       <Skills />
-      <Projects />
+      <Portfolio/>
       <Journey />
       <Footer />
     </div>
