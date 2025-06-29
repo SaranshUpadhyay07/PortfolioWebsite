@@ -15,9 +15,10 @@ const SkillTag = ({ name }) => (
 
 const Skills = () => {
   return (
-    <section className="container py-2 bg-white text-dark">
-      <div className="different-section">
-            <h1 className="mb-5 fw-light display-4">My Skills 🛠️</h1>
+    <section className="container-lg py-2 bg-white text-dark px-lg-5">
+      <div className="px-lg-5 ">
+        <div className=" px-lg-5 mx-auto different-section site-container">
+            <h1 className="mb-5 fw-light display-4 text-sm-center text-md-start text-lg-start">My Skills 🛠️</h1>
           <p className="text-muted mb-4">
             I have developed a diverse set of technical skills through my journey in the tech industry. I’m continuously striving to expand my knowledge and enhance my expertise.
           </p>
@@ -34,6 +35,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
+      </div>
       </div>
     </section>
   );

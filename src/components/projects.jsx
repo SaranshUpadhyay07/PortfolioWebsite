@@ -31,8 +31,6 @@ const projectData = [
     }
 ];
 
-
-
 function Projects() {
     const [selectedCategory, setSelectedCategory] = useState('Web');
 
@@ -45,43 +43,55 @@ function Projects() {
 
     return (
         <div className="diff-section">
-            <div className="custom-jumbotron additional jumbotron-fluid">
-                <div className="container text-dark sections" id="About-section">
-                    <h1 className="display-4 mb-4">Projects 📽️</h1>
+            <div className="container-lg px-lg-5 py-2 text-dark">
+                <div className="px-lg-5">
+                    <div className="px-lg-5">
+                        <h1 className="mb-5 fw-light display-4 text-sm-center text-md-start text-lg-start">
+                            Projects 📽️
+                        </h1>
 
-                    {/* Filter Buttons */}
-                    <div className="mb-4">
-                        {categories.map((category) => (
-                            <button
-                                key={category}
-                                className={`btn btn-sm me-2 mb-2  ${
-                                    selectedCategory === category ? 'view-project text-light' : 'btn-outline-dark'
-                                }`}
-                                onClick={() => setSelectedCategory(category)}
-                            >
-                                {category}
-                            </button>
-                        ))}
-                    </div>
+                        {/* Filter Buttons */}
+                        <div className="mb-4">
+                            {categories.map((category) => (
+                                <button
+                                    key={category}
+                                    className={`btn btn-sm me-2 mb-2 ${
+                                        selectedCategory === category
+                                            ? 'view-project text-light'
+                                            : 'btn-outline-dark'
+                                    }`}
+                                    onClick={() => setSelectedCategory(category)}
+                                >
+                                    {category}
+                                </button>
+                            ))}
+                        </div>
 
-                    {/* Filtered Project Cards */}
-                    <div className="row">
-                        {filteredProjects.map((project, index) => (
-                            <div key={index} className="col-12 col-md-6 mb-4 d-flex">
-                                <div className="card h-100 w-100">
-                                    <img
-                                        src={project.imageUrl}
-                                        className="card-img-top"
-                                        alt={`${project.title} Screenshot`}
-                                    />
-                                    <div className="card-body d-flex flex-column">
-                                        <h5 className="card-title">{project.title}</h5>
-                                        <p className="card-text">{project.description}</p>
-                                        <a href={project.link} className="btn text-white view-project mt-auto">View Project</a>
+                        {/* Filtered Project Cards */}
+                        <div className="row">
+                            {filteredProjects.map((project, index) => (
+                                <div key={index} className="col-12 col-md-6 mb-4 d-flex">
+                                    <div className="card h-100 w-100">
+                                        <img
+                                            src={project.imageUrl}
+                                            className="card-img-top"
+                                            alt={`${project.title} Screenshot`}
+                                        />
+                                        <div className="card-body d-flex flex-column">
+                                            <h5 className="card-title">{project.title}</h5>
+                                            <p className="card-text">{project.description}</p>
+                                            <a
+                                                href={project.link}
+                                                className="btn text-white view-project mt-auto"
+                                            >
+                                                View Project
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             </div>

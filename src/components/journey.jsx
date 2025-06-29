@@ -2,9 +2,10 @@ import React from 'react';
 
 function Journey(){
     return(
-        <section className="container py-2 bg-white text-dark">
-      <div className="different-section">
-        <h1 className="mb-5 fw-light display-4">My Journey 🚀</h1>
+        <section className=" container-lg px-lg-5 py-2 bg-white text-dark">
+          <div className="px-lg-5">
+              <div className=" px-lg-5  different-section">
+        <h1 className="mb-5 fw-light display-4 text-sm-center text-md-start text-lg-start">My Journey 🚀</h1>
         <p className="text-muted mb-4">
           My journey in tech has been a blend of passion, learning, and growth. Here’s a glimpse into my path:
         </p>
@@ -28,6 +29,7 @@ function Journey(){
           </div>
         </div>
       </div>
+          </div>
     </section>
     );
 }

@@ -103,30 +103,13 @@ width: 18px;
 }
 #About-section p{
   padding-top:25px;
-}
-.custom-jumbotron {
-    width: 95%;
-    margin: 0 1.6rem; /* centers the jumbotron */
-    border-radius: 12px;
-    padding: 2rem;
-}
-.additional {
-  border: 0px; /* Soft white border for dark UI */
-  border-radius: 0px;  /* Rounded corners */
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);  /* Soft shadow */
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  padding: 1rem;
-  margin-top:10px
-}
-.additional:hover {
-  transform: translateY(0);
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);  /* Deeper shadow on hover */
+  padding-bottom: 10px;
 }
 
 .diff-section{
     background-color: #f5f5f5;
     width: 100%;
-    padding: 2.5rem 12rem;
+    padding: 1.5rem 0rem;
     margin-top:30px;
     margin-bottom: 30px;
     /* border-top: 2.5px solid #e2e2e2 !important; */
@@ -135,13 +118,11 @@ width: 18px;
     /* box-shadow :inset 0 -0.5px 4px rgba(0, 0, 0, 0.1) !important; */
 
 }
-.diff-section h1 {
-    color:#333333;
-}
+
 #text-main h1{
     color:#333333 !important;
     font-weight: 600 !important;
-    font-size:6rem !important;
+    font-size:5.5rem !important;
     font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     margin-bottom: 0;
 }
@@ -155,7 +136,6 @@ width: 18px;
 
 .hero-section{
     gap:20%;
-    padding: 0 8.5rem;
 }
 footer {
   background-color: #f5f5f5;
@@ -221,16 +201,14 @@ footer .gradient-white {
      margin-bottom:20px;
     
 }
-.different-section{
-  padding: 0.5rem 8rem;
-}
+
 .contact-me{
     padding:9px;
     border-radius:10px;
     
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .Resume{
     margin-left:40%;
   }
@@ -273,7 +251,7 @@ body.modal-open::before {
     text-decoration: none;
 }
 .navbar-div {
-  background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent */
+  background-color: rgba(0, 0, 0, 0.4) !important; /* semi-transparent */
   backdrop-filter: blur(10px) !important;         /* main blur effect */
   -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -287,101 +265,8 @@ body.modal-open::before {
 }
 /* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
-@media (min-width: 1510px) {
-  .hero-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
-    max-width: 1600px;
-  }
-  .diff-section {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-  .different-section {
-    padding-left: 7rem;
-    padding-right: 7rem; 
-  }
-  .diff-section div, .different-section div{
-    max-width: 1600px;
-  }
-}
 
-@media (max-width: 1300px) {
-  .diff-section{
-    padding: 0rem 7rem;
-  }
-  .hero-section {
-    padding: 0 5rem;
-  }
-  .different-section{
-    padding: 0rem 5.3rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero-section {
-    padding: 0 4rem;
-  }
-  .diff-section{
-    padding: 0.5rem 4rem;
-  }
-  .different-section{
-    padding: 0.5rem 4.5rem;
-  }
-  .text-main {
-    text-align: center !important;
-    padding: 0 1rem;
-  }
-  #text-main h1 {
-    font-size: 4.5rem !important;
-  }
-
-  #img-main {
-    text-align: center !important;
-    margin-bottom: 10px;
-  }
-
-  #img-main img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%; /* ensures image is round */
-  }
-
-  .Resume {
-    display: block;
-    margin: 1rem auto;
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-@media(max-width:1000px){
-  .hero-section {
-    flex-direction: column-reverse !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 1.5rem !important;
-    padding: 0;
-  }
-  .diff-section{
-    padding: 0.5rem 0rem;
-  }
-  .different-section{
-    padding: 0.5rem 0rem;
-  }
-}
-
-@media(max-width:950px){
-  .diff-section{
-    padding: 0.5rem 0rem;
-  }
-  .different-section{
-    padding: 0.5rem 0rem;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .hero-section {
     flex-direction: column-reverse !important;
     align-items: center !important;
@@ -394,7 +279,7 @@ body.modal-open::before {
     padding: 0 1rem;
   }
   #text-main h1 {
-    font-size: 4.5rem !important;
+    font-size: 3.5rem !important;
   }
 
   #img-main {
@@ -422,29 +307,27 @@ body.modal-open::before {
     border-radius: 12px;
     padding: 0 !important;
 }
-.additional {
-  border: 0px; /* Soft white border for dark UI */
-  border-radius: 0px;  /* Rounded corners */
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);  /* Soft shadow */
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  padding: 1rem;
-  margin-top:10px
+.different-section h1, .diff-section h1{
+  text-align:center !important;
 }
-.additional:hover {
-  transform: translateY(0);
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);  /* Deeper shadow on hover */
+.diff-section,.different-section{
+  padding:0rem 0.7rem;
 }
-.diff-section {
-    padding: 0.05rem !important;
+.lead{
+  font-size: 0.9rem;
 }
-  .diff-section h1 {
+}
+  /* .diff-section h1 {
     font-size: 2rem;
     text-align: center;
-  }
+  } */
   .diff-section p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: justify;
   }
+  /* *{
+    border: 1px solid red;
+  } */
   
   .skills-list {
     padding: 0.5rem;
@@ -452,7 +335,7 @@ body.modal-open::before {
     text-align: center;
   }
 .lead{
-  font-size: 0.9rem !important;
+  font-size: 1.2rem !important;
   text-align: justify !important;
   margin-bottom: 0;
 }
@@ -460,12 +343,6 @@ body.modal-open::before {
     width: 95%;
     padding: 1rem;
   }
-
-  .diff-section {
-    padding: 1rem;
-    
-  }
-
   .additional {
     margin: 1rem 0;
     padding: 1rem;
@@ -487,16 +364,11 @@ body.modal-open::before {
   .social {
     margin-bottom: 15px; /* push it above bottom nav on mobile */
   }
-  .different-section{
-    padding: 0.5rem;
-  }
-  .different-section h1{
-    text-align:center;
-  }
   .additional {
     margin-left: 1.2rem;
   }
-}
+
+
 
 @media (max-width: 480px) {
   .text-main h1 {
@@ -520,7 +392,7 @@ body.modal-open::before {
   .skills-list {
     font-size: 14px;
   }
-  .additional {
-    margin-left: 0.5rem;
+  .lead{
+    font-size:15px !important;
   }
 }

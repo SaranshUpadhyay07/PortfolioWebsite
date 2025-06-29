@@ -2,13 +2,14 @@ import React from 'react';
 
 function Hero() {
   return (
-    <div className="container py-5 my-5 top-container">
-      <div className="row align-items-center hero-section">
-        {/* Text Section */}
+    <div className="container py-5 my-5 top-container container-lg px-lg-5">
+      <div className="px-lg-5">
+       <div className="hero-section align-items-center row  px-lg-5">
+           {/* Text Section */}
         <div id="text-main" className="col-lg-5 text-main">
-          <h1 className="display-3">about.</h1>
-          <h3 className="display-6">Hey,I am Saransh Upadhyay</h3>
-          <p className="intro fs-5 mb-2">
+          <h1 className="display-3 mb-1">about.</h1>
+          <h3 className="display-6 fs-2 pb-4">Hey,I am Saransh Upadhyay</h3>
+          <p className="intro mb-2" style={{ fontSize: '1.2rem' }}>
             A self-motivated tech enthusiast with a passion for startups, machine learning, and finance-tech, especially high-frequency trading.
           </p>
           <button className="btn btn-primary btn-lg mt-3 Resume">
@@ -24,6 +25,7 @@ function Hero() {
             alt="Portrait of Saransh Upadhyay"
           />
         </div>
+       </div>
       </div>
     </div>
   );
