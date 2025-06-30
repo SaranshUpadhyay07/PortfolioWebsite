@@ -11,7 +11,7 @@ function Portfolio(){
                         </h1>
                         <div className="row">
                             <div className="col-md-5">
-                                <img src="/images/Laptop.webp" alt="Laptop img" className="img-fluid rounded-pill portfolio-pic"/>
+                                <img src="/images/Laptop.png" alt="Laptop img" className="img-fluid rounded-pill portfolio-pic"/>
                             </div>
                             <div className="col-md-2"></div>
                             <div className="col-md-5 mt-3 fs-5">
