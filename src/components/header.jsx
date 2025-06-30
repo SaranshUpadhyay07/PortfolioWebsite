@@ -20,27 +20,40 @@ function Header() {
   return (
     <div >
       <nav className="navbar px-4 navbar-div navbar-expand-lg fixed-top">
-          <button
-            className="navbar-toggler bg-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link text-white" href="#">Home</a>
-              <a className="nav-link text-white" href="#">Features</a>
-              <a className="nav-link text-white" href="#">Pricing</a>
-              <a className="nav-link disabled text-muted" href="#">Disabled</a>
-            </div>
+        {/* Navbar Toggler */}
+        <button
+          className="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Collapsible nav links */}
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-link text-white" href="#">Home</a>
+            <a className="nav-link text-white" href="#">Features</a>
+            <a className="nav-link text-white" href="#">Pricing</a>
+            <a className="nav-link disabled text-muted" href="#">Disabled</a>
           </div>
-          <button className="contact-me btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact Me</button>
+        </div>
       </nav>
+
+      {/* Contact Me button fixed at top-right */}
+      <button
+        className="btn btn-light position-fixed"
+        style={{ top: '10px', right: '20px', zIndex: '1050' }}
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Contact Me
+      </button>
+
 
       {/* Modal */}
       <div className="modal fade social-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
