@@ -265,6 +265,12 @@ body.modal-open::before {
 }
 /* === Mobile-first Media Queries (Enhance Mobile Layout) === */
 
+.arrow{
+  width:100px;
+  height:100px;
+  /* color:#cecece !important;
+  padding-bottom:28px; */
+}
 
 @media (max-width: 1023px) {
   .hero-section {
@@ -274,6 +280,12 @@ body.modal-open::before {
     gap: 1.5rem !important;
     padding: 0;
   }
+  .arrow{
+  width:80px;
+  height:80px;
+  color:#cecece !important;
+  
+}
   .text-main {
     text-align: center !important;
     padding: 0 1rem;
