@@ -208,33 +208,6 @@ footer .gradient-white {
     
 }
 
-/* @media (max-width: 768px) {
-  .Resume{
-    margin-left:40%;
-  }
-    
-}
-@media (max-width: 400px) {
-  .Resume{
-    margin-left:30%;
-  }
-  #text-main {
-    font-size: 1. rem !important;
-  }
-    
-}
-@media (max-width: 600px) {
-  .Resume{
-    margin-left:35%;
-  }
-    
-}
-
-.blurred {
-  filter: blur(6px);
-  transition: filter 0.3s ease;
-}
-
 /* Optional darken overlay look */
 body.modal-open::before {
   content: "";
@@ -418,4 +391,5 @@ body.modal-open::before {
   .lead{
     font-size:15px !important;
   }
+  
 }

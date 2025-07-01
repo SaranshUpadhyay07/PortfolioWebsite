@@ -11,12 +11,12 @@ function Portfolio(){
                         </h1>
                         <div className="row">
                             <div className="col-md-5">
-                                <img src="/images/Laptop.png" alt="Laptop img" className="img-fluid rounded-pill portfolio-pic"/>
+                                <img src="/images/Laptop.png" alt="Laptop img" className="img-fluid rounded-pill portfolio-pic mb-sm-4" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" />
                             </div>
                             <div className="col-md-2"></div>
                             <div className="col-md-5 mt-3 fs-5">
-                                 <p className="lead">Here are some of the projects I’ve built using modern web technologies. From frontend UI to full-stack apps, each project reflects my skills and passion for clean, functional design.</p>
-                                 <div className="Resume btn btn-primary btn-sm text-light rounded-pill my-3 py-3 px-3"><a>Check them out</a></div>
+                                 <p className="lead portfolio-para" >Here are some of the projects I’ve built using modern web technologies. From frontend UI to full-stack apps, each project reflects my skills and passion for clean, functional design.</p>
+                                 <div className="Resume btn btn-primary btn-sm text-light rounded-pill my-3 py-3 px-3 check"><a>Check them out</a></div>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ function Hero() {
        <div className="hero-section align-items-center row  px-lg-5">
            {/* Text Section */}
         <div id="text-main" className="col-lg-6 text-main">
-          <h1 className="display-3 mb-1">about. <img src="/images/arrow.svg" class="arrow display-3 mb-4"/></h1>
+          <h1 className="display-3 mb-1">about. <img src="/images/arrow.svg" className="arrow display-3 mb-4"/></h1>
           <h3 className="display-6 fs-2 pb-4">Hey,I am Saransh Upadhyay</h3>
           <p className="intro mb-2" style={{ fontSize: '1.2rem' }}>
             A self-motivated tech enthusiast with a passion for startups, machine learning, and finance-tech, especially high-frequency trading.
