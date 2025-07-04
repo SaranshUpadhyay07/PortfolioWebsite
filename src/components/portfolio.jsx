@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Portfolio(){
     return(
@@ -16,7 +17,7 @@ function Portfolio(){
                             <div className="col-md-2"></div>
                             <div className="col-md-5 mt-3 fs-5">
                                  <p className="lead portfolio-para" >Here are some of the projects I’ve built using modern web technologies. From frontend UI to full-stack apps, each project reflects my skills and passion for clean, functional design.</p>
-                                 <div className="Resume btn btn-primary btn-sm text-light rounded-pill my-3 py-3 px-3 check"><a>Check them out</a></div>
+                                 <div className="Resume btn btn-primary btn-sm text-light rounded-pill my-3 py-3 px-3 check"><Link to='/projects'>Check them out</Link></div>
                             </div>
                         </div>
                     </div>

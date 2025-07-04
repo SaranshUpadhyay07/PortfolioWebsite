@@ -1,25 +1,22 @@
-import { useState } from 'react'
+import { Routes, Route } from "react-router-dom"
 import Header from './header.jsx'
-import Hero from './hero.jsx'
-import Socials from './socials.jsx'
-import About from './about.jsx'
-import Skills from './skills.jsx'
 import Footer from './footer.jsx'
+import Home from './home.jsx' // You’ll create this next
+import AboutMe from './aboutme.jsx'
 import Projects from './projects.jsx'
-import Journey from './journey.jsx'
-import Portfolio from './portfolio.jsx'
-// import Section from './Section.jsx'
+import Blog from './blog.jsx'
 
 function App() {
   return (
-    <div>
+    <div className="app-wrapper">
       <Header />
-      <Hero />
-      <Socials />
-      <About />
-      <Skills />
-      <Portfolio/>
-      <Journey />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe/>} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+
       <Footer />
     </div>
   )

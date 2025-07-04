@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 function Header() {
   useEffect(() => {
@@ -36,10 +37,10 @@ function Header() {
         {/* Collapsible nav links */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link text-white" href="#">Home</a>
-            <a className="nav-link text-white" href="#">Features</a>
-            <a className="nav-link text-white" href="#">Pricing</a>
-            <a className="nav-link disabled text-muted" href="#">Disabled</a>
+            <Link to="/" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">Home</Link> 
+            <Link to="/about" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">About</Link> 
+            <Link to="/projects" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">Projects</Link> 
+            <Link to="/blog" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">Blog</Link> 
           </div>
         </div>
       </nav>
