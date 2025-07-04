@@ -8,11 +8,11 @@ function Portfolio(){
                 <div className="px-lg-5">
                     <div className="px-lg-5 portfolio">
                         <h1 className="mb-5 fw-light display-4 text-sm-center text-md-start text-lg-start">
-                            Projects 
+                            Portfolio
                         </h1>
                         <div className="row">
                             <div className="col-md-5">
-                                <img src="/images/Laptop.png" alt="Laptop img" className="img-fluid rounded-pill portfolio-pic mb-sm-4" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-delay="30" data-aos-once="true" />
+                                <img src="/images/Laptop.png" alt="Laptop img" className="img-fluid  portfolio-pic mb-sm-4" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-delay="30" data-aos-once="true" />
                             </div>
                             <div className="col-md-2"></div>
                             <div className="col-md-5 mt-3 fs-5">

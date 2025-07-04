@@ -4,6 +4,7 @@ import About from './about.jsx'
 import Skills from './skills.jsx'
 import Journey from './journey.jsx'
 import Portfolio from './portfolio.jsx'
+import Project from './projects.jsx'
 
 function Home() {
   return (
@@ -21,6 +22,9 @@ function Home() {
         <a className="btn btn-primary btn-lg" href="#" role="button">
           Learn more
         </a>
+      </div>
+      <div>
+        <Project/>
       </div>
     </>
   )
