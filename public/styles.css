@@ -258,6 +258,13 @@ body.modal-open::before {
 .portfolio-pic{
   border-radius:30px;
 }
+@media (max-width: 1200px){
+  #text-main h1{
+    font-size:4.2rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
+  }
+}
 @media (max-width: 1023px) {
   .hero-section {
     flex-direction: column-reverse !important;
