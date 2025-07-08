@@ -1,10 +1,12 @@
 import React from 'react';
 
 const skills = {
-  Languages: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'Java'],
-  Frontend: ['React', 'Bootstrap', 'Tailwind CSS'],
+  Languages: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'Java','C'],
+  Frontend: ['React', 'Bootstrap', 'Tailwind CSS','Next.js'],
   Backend: ['Express.js'],
-  Databases: ['MongoDB', 'PostgreSQL', 'MySQL']
+  Databases: ['MongoDB', 'PostgreSQL', 'MySQL'],
+  DevOps: ['Git','Ubuntu'],
+  "Tools and Environment": ['VS Code', 'Postman','IntelliJ','CLion','Studio 3T']
 };
 
 const SkillTag = ({ name }) => (
@@ -25,8 +27,8 @@ const Skills = () => {
 
           <div className="row">
             {Object.entries(skills).map(([category, items], index) => (
-              <div className="col-12 mb-4" key={index}>
-                <h5 className="fw-semibold mb-2">{index + 1}. {category}</h5>
+              <div className="col-12 mb-3" key={index}>
+                <h5 className="fw-semibold fs-6 mb-2">{index + 1}. {category}</h5>
                 <div className="d-flex flex-wrap">
                   {items.map((item, idx) => (
                     <SkillTag key={idx} name={item} />
