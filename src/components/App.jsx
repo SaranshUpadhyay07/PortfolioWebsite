@@ -5,11 +5,13 @@ import Home from './home.jsx' // You’ll create this next
 import AboutMe from './aboutme.jsx'
 import Projects from './projects.jsx'
 import Blog from './blog.jsx'
+import ScrollToTop from './scrolltop.jsx'
 
 function App() {
   return (
     <div className="app-wrapper">
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe/>} />

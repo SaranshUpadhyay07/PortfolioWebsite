@@ -5,6 +5,7 @@ import Skills from './skills.jsx'
 import Journey from './journey.jsx'
 import Portfolio from './portfolio.jsx'
 import Project from './projects.jsx'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -19,9 +20,9 @@ function Home() {
         <p>
           It uses utility classes for typography and spacing to space content out within the container.
         </p>
-        <a className="btn btn-primary btn-lg" href="#" role="button">
+        <Link className="btn btn-primary btn-lg" to="/about" role="button">
           Learn more
-        </a>
+        </Link>
       </div>
       <div>
         <Project/>

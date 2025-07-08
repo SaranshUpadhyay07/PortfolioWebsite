@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   useEffect(() => {
@@ -19,68 +19,68 @@ function Header() {
   }, []);
 
   return (
-    <div >
-      <nav className="navbar px-4 navbar-div navbar-expand-lg fixed-top">
-        {/* Navbar Toggler */}
-        <button
-          className="navbar-toggler bg-light"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    <>
+      <nav className="navbar navbar-expand-lg fixed-top px-4 navbar-div">
 
-        {/* Collapsible nav links */}
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <Link to="/" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">Home</Link> 
-            <Link to="/about" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">About</Link> 
-            <Link to="/projects" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">Projects</Link> 
-            <Link to="/blog" className="nav-link text-white fs-lg-4 fs-5 px-lg-4">Blog</Link> 
+          {/* Toggler */}
+          <button
+            className="navbar-toggler text-white bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          {/* Collapsible Links */}
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="navbar-nav ms-auto">
+              <Link to="/" className="nav-link me-5 fs-5">Home</Link>
+              <Link to="/about" className="nav-link me-5 fs-5">About</Link>
+              <Link to="/projects" className="nav-link me-5 fs-5">Projects</Link>
+              <Link to="/blog" className="nav-link me-5 fs-5">Blog</Link>
+            </div>
           </div>
-        </div>
       </nav>
 
-      {/* Contact Me button fixed at top-right */}
+      {/* Floating Contact Me Button */}
       <button
-        className="btn btn-light position-fixed"
-        style={{ top: '10px', right: '20px', zIndex: '1050' }}
+        className="floating-contact"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
         Contact Me
       </button>
 
-
-      {/* Modal */}
-      <div className="modal fade social-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content bg-black text-light">
+      {/* Contact Modal */}
+      <div
+        className="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabIndex="-1"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content bg-dark text-white">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="staticBackdropLabel">Contact Me</h1>
-              <button type="button" className="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 className="modal-title">Contact Me</h5>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <p className="text-white">Feel free to reach out to me through any of the platforms below:</p>
-              <ul className="list-styled">
-                <li><a href="https://www.linkedin.com/in/saransh-upadhyay-81702020a/" className="text-decoration-none text-light">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/saransh_upadhyay07/ " target="_blank" className="text-decoration-none text-white">Instagram</a></li>
-                <li><a href="https://x.com/SaranshUpadhy20" className="text-decoration-none text-white" target="_blank">X</a></li>
-                <li><a href="#" className="text-decoration-none text-white" onClick={(e) => {e.preventDefault(); // Prevent default anchor behavior
-                window.location.href = 'mailto:saransh.upadhyay07@gmail.com'; // Trigger mail client
-            }}
-            aria-label="Send Email"
-            >Gmail</a></li>
+              <ul className="list-unstyled">
+                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/about" className="nav-link">About</Link>
+                <Link to="/projects" className="nav-link">Projects</Link>
+                <Link to="/blog" className="nav-link">Blog</Link>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

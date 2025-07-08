@@ -35,11 +35,11 @@ const projectData = [
     link: '#',
   },
   {
-    title: 'Project Five',
+    title: 'Temp Track',
     category: 'Web',
     description: 'A brief description of Project Five.',
-    videoUrl: '',
-    thumbnailUrl: '',
+    videoUrl: 'projects/Temp_track.mp4',
+    thumbnailUrl: 'projects/Temp_track.png',
     link: '#',
   },
 ];
@@ -101,7 +101,7 @@ function Projects() {
               <div className="row">
                 {filteredProjects.map((project, index) => (
                   <div key={index} className="col-12 col-sm-6 col-lg-4 mb-4 d-flex">
-                    <div className="card h-100 w-100 shadow-sm">
+                    <div className="card h-100 w-100 project-card">
                       {/* Video on Hover */}
                       {project.videoUrl && project.thumbnailUrl ? (
                         <div
