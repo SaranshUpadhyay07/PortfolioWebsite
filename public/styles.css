@@ -169,41 +169,6 @@ footer a {
 footer a:hover {
   color: #000;
 }
-.navbar-div {
-  background: rgba(4, 4, 4, 0.1) !important;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-nav .nav-link {
-  font-family: 'Orbitron', sans-serif;
-  color: #393939 !important;
-  font-weight: 500;
-  font-size: 1.05rem;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: rgb(35, 35, 35); /* hover color */
-  transition: width 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
-}
-
-.navbar-nav .nav-link:hover {
-  color: rgb(50, 49, 49) !important;
-}
 
 /* Floating Button */
 .floating-contact {
@@ -228,6 +193,90 @@ footer a:hover {
 
 /* Import Orbitron font */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+/* Base Navbar */
+.navbar-div {
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  padding: 0.6rem 1rem;
+}
+
+/* Navbar Brand Icon */
+.navbar-brand img.home-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.navbar-brand img.home-icon:hover {
+  transform: scale(1.05);
+}
+
+/* Nav Links */
+.navbar-nav {
+  gap: 0.5rem;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.7rem 1.2rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover & Active underline */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .active-link::after {
+  width: 80%;
+}
+
+/* Active Link Style */
+.active-link {
+  font-weight: 700;
+}
+
+/* Toggler Button (Mobile) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Mobile dropdown fix */
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .navbar-nav .nav-link {
+    width: 100%;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+  }
+}
 
 footer .top {
   background: url("https://www.adhamdannaway.com/wp-content/themes/dannaway/images/sprite.png") no-repeat 0 -217px;
@@ -510,22 +559,38 @@ body.modal-open::before {
   height: 550px !important;;
   border: 1px solid grey;
   border-radius:50%;
-  margin-top: 115px !important;
+  margin-top: 70px !important;
   padding: 120px!important;
+}
+.social-icons{
+  gap:5%;
+  font-size:x-large
+}
+.home-icon{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+}
+.home-icon:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0,0, 0.5);
+  transition: transform 0.5s ease;
+  cursor:pointer;
 }
 @media (max-width: 991px) {
   .home-circle {
     width: 400px !important;
     height: 400px !important;
     padding: 80px !important;
-    margin-top: 120px !important;
+    margin-top: 90px !important;
   }
 }
 @media (max-width: 575px) {
   .home-circle {
-    width: 280px !important;
-    height: 280px !important;
+    width: 300px !important;
+    height: 300px !important;
     padding: 50px !important;
-    margin-top: 100px !important;
+    margin-top: 80px !important;
   }
 }
