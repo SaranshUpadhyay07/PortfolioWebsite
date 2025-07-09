@@ -118,7 +118,7 @@ function Projects() {
               </div>
 
               {/* Project Cards */}
-              <div className="row">
+              <div className="row custom-project-row">
                 {filteredProjects.map((project, index) => (
                   <div key={index} className="col-12 mb-4 d-flex col-sm-6 col-lg-6 ">
                     <div className="card h-100 w-100 project-card ">

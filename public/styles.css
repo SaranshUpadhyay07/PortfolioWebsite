@@ -707,7 +707,7 @@ h1 {
   }
 }
 @media (min-width: 1350px) {
-  .row > .col-lg-6 {
+  .custom-project-row > .col-lg-6 {
     flex: 0 0 auto !important;
     width: 33.333333% !important;
   }
