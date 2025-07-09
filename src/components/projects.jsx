@@ -58,19 +58,38 @@ function Projects() {
     <>
       {/* Hero Section */}
       <div className="container py-5 my-5 top-container container-lg px-lg-5">
-        <div className="px-lg-5">
-          <div className="hero-section align-items-center row pt-5 px-lg-5 col-12">
-            <div id="text-main" className="col-lg-4 text-main mr-5">
+        <div className="px-lg-5 my-lg-5">
+          <div className='py-lg-4'>
+            <div className="hero-section align-items-center row pt-5 px-lg-5 col-12">
+            <div id="text-main" className="col-lg-4 text-main mr-5 mb-lg-4">
               <h1 className="mb-3 fw-light display-1 text-sm-center">projects.</h1>
               <p className="intro fs-4">Check out my projects</p>
             </div>
-            <div id="img-project" className="col-lg-6 text-center">
+            <div id="img-project" className="col-lg-6 text-center ">
               <img
                 src="/images/portfolio.jpg"
-                className="img-fluid shadow-sm"
+                className="img-fluid shadow-sm d-none d-md-block"
                 alt="Portrait of Saransh Upadhyay"
               />
             </div>
+            <div className="text-center mt-5 d-none d-md-block">
+              <button
+                className="scroll-down-btn"
+                onClick={() => {
+                  window.scrollBy({
+                    top: window.innerHeight,
+                    behavior: 'smooth',
+                  });
+                }}
+              >
+                <img
+                  src="/images/scroll-down.png"
+                  alt="Scroll Down"
+                  className="scroll-icon mt-3"
+                />
+              </button>
+            </div>
+          </div>
           </div>
         </div>
       </div>

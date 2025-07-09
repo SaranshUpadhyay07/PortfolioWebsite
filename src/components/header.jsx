@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg px-4 navbar-div">
+      <nav className="navbar navbar-expand-lg px-4 navbar-div fixed-top">
         <NavLink to="/" className="navbar-brand">
           <img src="/images/SU.png" className="home-icon" alt="Logo" />
         </NavLink>
@@ -66,6 +66,14 @@ function Header() {
           </div>
         </div>
       </nav>
+
+      <button
+        className="floating-contact-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        <i className="bi bi-envelope-fill me-2"></i> Contact Me
+      </button>
     </>
   );
 }

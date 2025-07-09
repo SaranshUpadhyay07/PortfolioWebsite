@@ -1,57 +1,65 @@
-import Hero from './hero.jsx'
-import Socials from './socials.jsx'
-import About from './about.jsx'
-import Skills from './skills.jsx'
-import Journey from './journey.jsx'
-import Portfolio from './portfolio.jsx'
-import ProjectSlider from './projectslider.jsx'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
- 
-const ExampleComponent = () => {
-  return (
-    <TypeAnimation
-      sequence={[
-        'One', // Types 'One'
-        2000, // Waits 1s
-        'Two', // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
-        'Two Three',
-        2000, // Types 'Three' without deleting 'Two'
-        () => {
-          console.log('Sequence completed');
-        },
-      ]}
-      wrapper="span"
-      cursor={true}
-      repeat={Infinity}
-      style={{ fontSize: '1.3em', display: 'inline-block' }}
-    />
-  );
-};
 
-function Home() {
+function HomePage() {
   return (
-    <>
-      {/* Bootstrap-style jumbotron */}
-      <div className="jumbotron text-center different-section top-container container-lg  home-circle mb-5">
-        <h1 className="display-6">Hello, world!</h1>
-        <ExampleComponent />
-        <hr className="my-4" />
-        <div class="d-flex justify-content-center mb-4 social-icons">
-          <ion-icon name="logo-github"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
-          <ion-icon name="logo-linkedin"></ion-icon>
+    <section className="home">
+      <div className="home-inner">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQF5E9HPElXHoQ/profile-displayphoto-scale_400_400/B56ZeoR.U7H8Ag-/0/1750874975264?e=1756339200&v=beta&t=pqHknqahTkWc3wZyZpphs1UfChqfyW9YFxEHspjQ9WE"
+          alt="Saransh Upadhyay Portrait"
+          className="profile-img"
+        />
+
+        <h1>
+          Hi, I'm <span className="highlight">Saransh Upadhyay</span>
+        </h1>
+        <p className="tagline">Aspiring Software Engineer & Curious Technophile</p>
+
+        <span className="typing">
+          <TypeAnimation
+            sequence={[
+              'Web Developer',
+              1500,
+              'AI Enthusiast',
+              1500,
+              'React + TS Fanboy',
+              1500,
+              'Procrastinator ',
+              2000,
+              '',
+              500
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+          />
+        </span>
+
+        <div className="socials">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
         </div>
-        <Link className="btn btn-primary btn-lg" to="/about" role="button">
-          Learn more
-        </Link>
+        <div className="d-flex flex-wrap  align-items-center justify-content-center home-buttons">
+            <Link className="btn btn-primary btn-lg mt-3 Resume" to="/about">
+              About Me
+            </Link>
+            <button className="btn btn-primary btn-lg mt-3 Resume">
+                <a href="./pdf/SaranshUpadhyay_resume.pdf" target="_blank"><ion-icon name="download-outline"></ion-icon> Resume</a>
+              </button>
+          </div>
       </div>
-      <div>
-        <ProjectSlider/>
-      </div>
-    </>
-  )
+    </section>
+  );
 }
 
-export default Home
+export default HomePage;
+
