@@ -68,11 +68,12 @@ function Projects() {
             <div id="img-project" className="col-lg-6 text-center ">
               <img
                 src="/images/portfolio.jpg"
-                className="img-fluid shadow-sm d-none d-md-block"
+                className="img-fluid shadow-sm d-none d-lg-block"
                 alt="Portrait of Saransh Upadhyay"
+                id="hero-image2"
               />
             </div>
-            <div className="text-center mt-5 d-none d-md-block">
+            <div className="text-center mt-5 d-none d-lg-block">
               <button
                 className="scroll-down-btn"
                 onClick={() => {

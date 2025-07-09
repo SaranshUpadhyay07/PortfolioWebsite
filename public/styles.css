@@ -691,12 +691,18 @@ h1 {
   #hero-image {
     display: block !important;
   }
+  #hero-image2{
+    display: block !important;
+  }
 }
 @media screen and (max-width: 1023px) {
   #hero-image {
     display: none !important;
   }
   .scroll-down-btn{
+    display: none !important;
+  }
+  #hero-image2{
     display: none !important;
   }
 }
