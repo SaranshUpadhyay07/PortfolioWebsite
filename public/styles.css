@@ -262,10 +262,9 @@ footer a:hover {
 }
 .navbar-nav .nav-link {
   color: #fff !important;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  text-transform: uppercase;
-  padding: 0.7rem 1.2rem;
+  padding: 0.7rem 1.3rem !important;
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
