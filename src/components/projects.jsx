@@ -120,8 +120,8 @@ function Projects() {
               {/* Project Cards */}
               <div className="row">
                 {filteredProjects.map((project, index) => (
-                  <div key={index} className="col-12 col-sm-6 col-lg-4 mb-4 d-flex">
-                    <div className="card h-100 w-100 project-card">
+                  <div key={index} className="col-12 mb-4 d-flex col-sm-6 col-lg-6 ">
+                    <div className="card h-100 w-100 project-card ">
                       {/* Video on Hover */}
                       {project.videoUrl && project.thumbnailUrl ? (
                         <div
@@ -189,6 +189,7 @@ function Projects() {
                       </div>
                     </div>
                   </div>
+                  
                 ))}
               </div>
 
