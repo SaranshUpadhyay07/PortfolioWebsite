@@ -687,6 +687,19 @@ h1 {
 .highlight{
   color:rgb(162, 162, 162) !important;
 }
+@media screen and (min-width: 1024px) {
+  #hero-image {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #hero-image {
+    display: none !important;
+  }
+  .scroll-down-btn{
+    display: none !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .profile-img {
     width: 140px;
