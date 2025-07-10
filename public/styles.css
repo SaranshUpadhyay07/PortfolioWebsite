@@ -194,6 +194,63 @@ footer a:hover {
 
   transition: all 0.3s ease;
 }
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #2f2f2f, #777777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-img-wrapper {
+  background: #2f2f2f;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-img-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #2f2f2f, #999999);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #1a1a1a, #888888);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border: 2px solid #2f2f2f;
+  color: #2f2f2f;
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+}
+
+.btn-outline-dark:hover {
+  background: #2f2f2f;
+  color: #fff;
+}
 
 .floating-contact-btn:hover {
   background-color: #161b22;

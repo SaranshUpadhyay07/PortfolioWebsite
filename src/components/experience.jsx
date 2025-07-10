@@ -17,7 +17,7 @@ function Experience() {
   ];
 
   return (
-    <div className="diff-section pt-3 pb-5 ">
+    <div className="diff-section pt-3 ">
       <section className="container-lg  px-lg-5 py-3  text-dark">
           <div className='px-lg-5'>
              <h1 className="mb-5 fw-normal display-4 text-center text-md-start px-lg-3">Experience</h1>
