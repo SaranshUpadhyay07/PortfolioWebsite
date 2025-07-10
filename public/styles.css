@@ -557,6 +557,7 @@ body.modal-open::before {
   .additional {
     margin-left: 1.2rem;
   }
+  
 
 @media (min-width:1350px){
   .projectslider-card{
