@@ -1,47 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // You forgot to import this
+import { Link } from 'react-router-dom';
 
-function ProjectSlider() {
+const projectData = [
+  {
+    title: 'Key-Press Fidget',
+    description: 'An interactive 3D keyboard key using HTML, CSS, and JavaScript.',
+    link: '#',
+  },
+  {
+    title: 'Omni Foods',
+    description: 'A modern food website built with responsive design.',
+    link: '#',
+  }
+];
+
+function ProjectsSlider() {
   return (
-    <div className="different-section pt-3 pb-5">
+    <div className="different-section py-5 mb-5">
       <div className="container-lg px-lg-5 py-2 text-dark">
         <div className="px-lg-5">
-          <div className="px-lg-5 portfolio">
-            <h1 className="mb-5 fw-light display-4 text-sm-center text-md-start text-lg-start">
-              Portfolio
-            </h1>
-            <div className="row col-12">
-              <div className="col-md-5">
-                <img
-                  src="/images/Laptop.png"
-                  alt="Laptop img"
-                  className="img-fluid portfolio-pic mb-sm-4"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-in"
-                  data-aos-duration="1000"
-                  data-aos-delay="30"
-                  data-aos-once="true"
-                />
-              </div>
-              <div className="col-md-2"></div>
-              <div className="col-md-5 mt-3 fs-6">
-                <p className="lead portfolio-para">
-                  Here are some of the projects I’ve built using modern web technologies.
-                  From frontend UI to full-stack apps, each project reflects my skills and
-                  passion for clean, functional design.
-                </p>
-                <div className="Resume btn btn-primary btn-sm text-light rounded-pill my-3 py-3 px-3 check">
-                  <Link to="/projects" className="text-white text-decoration-none">
-                    Check them out
-                  </Link>
+          <h2 className="fw-light mb-4 text-center mb-5">My Latest Projects</h2>
+          <div className="px-lg-5 projectslider-card">
+            <div className="row custom-project-row ">
+              {projectData.map((project, index) => (
+                <div key={index} className="col-12 mb-4 d-flex col-lg-6">
+                  <div className="custom-project-card w-100 h-100">
+                    <div className="custom-card-body d-flex flex-column p-4">
+                      <h5 className="card-title">{project.title}</h5>
+                      <p className="card-text">{project.description}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
+          <div className="text-center mt-4">
+              <Link to="/projects" className="btn btn-outline-dark px-4 py-2">
+                See More Projects
+              </Link>
+            </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default ProjectSlider;
+export default ProjectsSlider;

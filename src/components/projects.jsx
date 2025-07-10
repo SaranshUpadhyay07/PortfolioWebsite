@@ -42,6 +42,15 @@ const projectData = [
     thumbnailUrl: 'projects/Temp_track.png',
     link: '#',
   },
+  {
+    title: 'Secrets App',
+    category: 'Web',
+    description:
+      'An interactive and visually engaging 3D keyboard key built using HTML, CSS, and JavaScript',
+    videoUrl: 'projects/Secrets.mp4',
+    thumbnailUrl: 'projects/Secrets.png',
+    link: '#',
+  },
 ];
 
 function Projects() {

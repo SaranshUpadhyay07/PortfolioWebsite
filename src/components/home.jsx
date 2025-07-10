@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
+import Experience from './experience.jsx';
+import ProjectSlider from './projectslider.jsx';
 
 function HomePage() {
   return (
+    <>
     <section className="home">
       <div className="home-inner">
         <img
@@ -52,12 +55,15 @@ function HomePage() {
             <Link className="btn btn-primary btn-lg mt-3 Resume" to="/about">
               About Me
             </Link>
-            <button className="btn btn-primary btn-lg mt-3 Resume">
+            <button className="btn btn-primary btn-lg mt-3 Resume mb-0">
                 <a href="./pdf/SaranshUpadhyay_resume.pdf" target="_blank"><ion-icon name="download-outline"></ion-icon> Resume</a>
               </button>
           </div>
       </div>
     </section>
+    <Experience />
+    <ProjectSlider />
+    </>
   );
 }
 
