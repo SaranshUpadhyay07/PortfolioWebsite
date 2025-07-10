@@ -3,23 +3,23 @@ import React, { useEffect, useState } from 'react';
 const Quote = () => {
   const [quote, setQuote] = useState(null);
 
-  const fetchQuote = () => {
-    fetch('https://goquotes-api.herokuapp.com/api/v1/random?count=1')
-      .then((res) => res.json())
-      .then((data) => {
-        const fetchedQuote = data.quotes[0];
-        setQuote({
-          text: fetchedQuote.text,
-          author: fetchedQuote.author,
-        });
-      })
-      .catch(() => {
-        setQuote({
-          text: 'Unable to load quote at the moment.',
-          author: 'System',
-        });
+ const fetchQuote = () => {
+  fetch('https://quotes-api-self.vercel.app/quote')
+    .then((res) => res.json())
+    .then((data) => {
+      setQuote({
+        text: data.quote,
+        author: data.author || 'Unknown',
       });
-  };
+    })
+    .catch(() => {
+      setQuote({
+        text: 'Unable to load quote at the moment.',
+        author: 'System',
+      });
+    });
+};
+
 
   useEffect(() => {
     fetchQuote();
