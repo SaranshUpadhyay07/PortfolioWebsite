@@ -4,7 +4,7 @@ const Quote = () => {
   const [quote, setQuote] = useState(null);
 
   const fetchQuote = () => {
-    fetch('https://api.quotable.io/random')
+    fetch('https://api.quotable.io/random?tags=famous-quotes')
       .then((res) => res.json())
       .then((data) => {
         setQuote({
