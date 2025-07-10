@@ -4,12 +4,13 @@ const Quote = () => {
   const [quote, setQuote] = useState(null);
 
   const fetchQuote = () => {
-    fetch('https://api.quotable.io/random')
+    fetch('https://goquotes-api.herokuapp.com/api/v1/random?count=1')
       .then((res) => res.json())
       .then((data) => {
+        const fetchedQuote = data.quotes[0];
         setQuote({
-          text: data.content,
-          author: data.author,
+          text: fetchedQuote.text,
+          author: fetchedQuote.author,
         });
       })
       .catch(() => {
