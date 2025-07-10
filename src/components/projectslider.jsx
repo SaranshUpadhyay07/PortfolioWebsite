@@ -18,7 +18,7 @@ const projectData = [
 
 function ProjectsSlider() {
   return (
-    <section className="different-section py-5 mb-5 elegant-bg ">
+    <section className="diff-section py-5 mb-5 elegant-bg ">
       <div className='container-lg px-lg-5 py-3 text-light'>
         <div className="container-lg px-lg-5 text-dark">
         <h2 className="mb-5 fw-normal display-4 text-center text-md-start px-lg-4 gradient-text ">

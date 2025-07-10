@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import Experience from './experience.jsx';
 import ProjectSlider from './projectslider.jsx';
+import Skills from './skills.jsx'
 
 function HomePage() {
   return (
@@ -62,6 +63,7 @@ function HomePage() {
       </div>
     </section>
     <Experience />
+    <Skills />
     <ProjectSlider />
     </>
   );

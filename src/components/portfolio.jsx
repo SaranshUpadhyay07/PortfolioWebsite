@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function Portfolio(){
     return(
-        <div className="diff-section pt-3 pb-5">
+        <div className="different-section pt-3 pb-5">
             <div className="container-lg px-lg-5 py-2 text-dark">
                 <div className="px-lg-5 ">
                     <div className="px-lg-5 portfolio">
