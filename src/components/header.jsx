@@ -2,22 +2,6 @@ import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
-  useEffect(() => {
-    const modal = document.getElementById('staticBackdrop');
-    const content = document.getElementById('main-content');
-
-    const handleShow = () => content?.classList.add('blurred');
-    const handleHide = () => content?.classList.remove('blurred');
-
-    modal?.addEventListener('show.bs.modal', handleShow);
-    modal?.addEventListener('hidden.bs.modal', handleHide);
-
-    return () => {
-      modal?.removeEventListener('show.bs.modal', handleShow);
-      modal?.removeEventListener('hidden.bs.modal', handleHide);
-    };
-  }, []);
-
   return (
     <>
       <nav className="navbar navbar-expand-lg px-4 navbar-div fixed-top">
@@ -63,16 +47,24 @@ function Header() {
             >
               blog
             </NavLink>
+            <NavLink
+              to="/contactme"
+              className={({ isActive }) =>
+                `nav-link d-lg-none ${isActive ? 'active-link' : ''}`
+              }
+            >
+              contact me
+            </NavLink>
           </div>
         </div>
       </nav>
 
       <button
-        className="floating-contact-btn"
+        className="floating-contact-btn d-none d-lg-block"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
-        <i className="bi bi-envelope-fill me-2"></i> Contact Me
+        <NavLink to="/contactme" className="text-light text-decoration-none">Contact Me</NavLink>
       </button>
     </>
   );

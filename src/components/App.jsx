@@ -6,6 +6,7 @@ import AboutMe from './aboutme.jsx'
 import Projects from './projects.jsx'
 import Blog from './blog.jsx'
 import ScrollToTop from './scrolltop.jsx'
+import ContactMe from './contactme.jsx'
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         <Route path="/about" element={<AboutMe/>} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contactme" element={<ContactMe />} />
       </Routes>
-
       <Footer />
     </div>
   )
