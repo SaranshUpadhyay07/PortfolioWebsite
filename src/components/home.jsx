@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Experience from './experience.jsx';
 import ProjectSlider from './projectslider.jsx';
 import Skills from './skills.jsx'
+import Quote from './quote.jsx';
 
 function HomePage() {
   return (
@@ -65,6 +66,7 @@ function HomePage() {
     <Experience />
     <Skills />
     <ProjectSlider />
+    <Quote />
     </>
   );
 }
