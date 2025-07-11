@@ -4,7 +4,7 @@ const Quote = () => {
   const [quote, setQuote] = useState(null);
 
  const fetchQuote = () => {
-  fetch('https://programming-quotesapi.vercel.app/api/random')
+  fetch('https://quotes-api-self.vercel.app/quote')
     .then((res) => res.json())
     .then((data) => {
       setQuote({
