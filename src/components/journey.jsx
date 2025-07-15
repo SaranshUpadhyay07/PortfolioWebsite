@@ -13,11 +13,11 @@ function Journey(){
 
         <div className="timeline">
           <div className="timeline-item">
-            <h5 className="fw-semibold">2019 - 2020</h5>
+            <h5 className="fw-semibold">2023 - 2024</h5>
             <p>Started my journey with a focus on web development, learning HTML, CSS, and JavaScript.</p>
           </div>
           <div className="timeline-item">
-            <h5 className="fw-semibold">2020 - 2021</h5>
+            <h5 className="fw-semibold">2024 - 2025</h5>
             <p>Dived into React and Node.js, building my first full-stack applications.</p>
           </div>
           <div className="timeline-item">
