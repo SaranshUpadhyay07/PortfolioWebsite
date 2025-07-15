@@ -18,16 +18,7 @@ function Journey(){
           </div>
           <div className="timeline-item">
             <h5 className="fw-semibold">2024 - 2025</h5>
-            <p>Dived into React and Node.js, building my first full-stack applications.</p>
-          </div>
-          <div className="timeline-item">
-            <h5 className="fw-semibold">2021 - 2022</h5>
-            <p>Explored machine learning and data science, working on projects that involved data analysis and predictive modeling.</p>
-          </div>
-          <div className="timeline-item">
-            <h5 className="fw-semibold">2022 - Present</h5>
-            <p>Currently focused on high-frequency trading algorithms and fintech solutions, leveraging my skills to create impactful projects.</p>
-          </div>
+            
         </div>
       </div>
           </div>
