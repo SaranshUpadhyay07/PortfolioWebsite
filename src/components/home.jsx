@@ -58,7 +58,7 @@ function HomePage() {
               About Me
             </Link>
             <button className="btn btn-primary btn-lg mt-3 Resume mb-0">
-                <a href="./pdf/SaranshUpadhyay_resume.pdf" target="_blank"><ion-icon name="download-outline"></ion-icon> Resume</a>
+                <a href="./pdf/resume.pdf" target="_blank"><ion-icon name="download-outline"></ion-icon> Resume</a>
               </button>
           </div>
       </div>
