@@ -9,8 +9,11 @@ import Quote from './quote.jsx';
 function HomePage() {
   return (
     <>
-    <section className="home">
-      <div className="home-inner">
+    <section className=" different-section d-flex align-items-center justify-content-center mb-5">
+      <div class="py-5 ">
+        <div class="pt-5">
+          <div class="pt-4 pb-sm-5 pb-md-1">
+            <div className="home-inner">
         <img
           src="https://media.licdn.com/dms/image/v2/D5603AQF5E9HPElXHoQ/profile-displayphoto-scale_400_400/B56ZeoR.U7H8Ag-/0/1750874975264?e=1756339200&v=beta&t=pqHknqahTkWc3wZyZpphs1UfChqfyW9YFxEHspjQ9WE"
           alt="Saransh Upadhyay Portrait"
@@ -62,6 +65,10 @@ function HomePage() {
               </button>
           </div>
       </div>
+          </div>
+        </div>
+      </div>
+
     </section>
     <Experience />
     <Skills />
